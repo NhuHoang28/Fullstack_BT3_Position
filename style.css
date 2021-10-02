@@ -1,0 +1,38 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    border: 0px;
+    outline: none;
+}
+
+body {
+    padding: 100px;
+}
+
+.tooltip {
+    position: relative;
+}
+
+.tooltip>span {
+    display: none;
+    position: absolute;
+    left: 0px;
+    bottom: calc(100% + 10px);
+    background-color: gray;
+    width: 300px;
+    text-align: center;
+    transform: translateX(calc(-50% + 10px));
+}
+
+.tooltip:hover>span {
+    display: block;
+}
+
+.tooltip-arrow {
+    display: inline-block;
+    border: 10px solid black;
+    margin-bottom: -20px;
+    border-color: transparent;
+    border-top-color: gray;
+}
