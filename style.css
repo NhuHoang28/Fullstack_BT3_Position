@@ -17,12 +17,12 @@ body {
 .tooltip>span {
     display: none;
     position: absolute;
-    left: 0px;
+    left: 50%;
     bottom: calc(100% + 10px);
     background-color: gray;
     width: 300px;
     text-align: center;
-    transform: translateX(calc(-50% + 10px));
+    transform: translateX(-50%);
 }
 
 .tooltip:hover>span {
